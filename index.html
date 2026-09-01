@@ -138,6 +138,59 @@
     </footer>
 
     <script src="script.js"></script>
+<!-- QR Generator Modal -->
 
+<div class="tool-modal" id="qrModal">
+
+    <div class="modal-box">
+
+        <button class="close-modal" onclick="closeQR()">×</button>
+
+        <div class="modal-icon">▣</div>
+
+        <h2>QR Generator</h2>
+
+        <p class="modal-description">
+            Create a QR code from any text or URL.
+        </p>
+
+        <input
+            type="text"
+            id="qrInput"
+            class="tool-input"
+            placeholder="Enter text or URL..."
+        >
+
+        <button class="primary-btn" onclick="generateQR()">
+            Generate QR
+        </button>
+
+        <div class="qr-result" id="qrResult">
+
+            <div id="qrcode"></div>
+
+            <div class="qr-actions">
+
+                <button
+                    class="download-btn"
+                    onclick="downloadQR()"
+                >
+                    📥 Download PNG
+                </button>
+
+                <button
+                    class="clear-btn"
+                    onclick="clearQR()"
+                >
+                    Clear
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 </body>
 </html>
