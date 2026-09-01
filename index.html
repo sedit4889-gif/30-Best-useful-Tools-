@@ -1,111 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>S TOOLS — Online Tools</title>
-    <meta name="description" content="S TOOLS - Free and useful online tools by @be.like_sahil">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>S TOOLS — Free Online Tools</title>
+
+    <meta
+        name="description"
+        content="S TOOLS — Free, fast and useful online tools by @be.like_sahil"
+    >
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <!-- Background Effects -->
+    <!-- Background Glow -->
+
     <div class="glow glow-1"></div>
     <div class="glow glow-2"></div>
 
-    <!-- Header -->
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
     <header>
+
         <div class="logo">
             <span>S</span> TOOLS
         </div>
 
-        <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+        <button
+            class="theme-btn"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+        >
             ☀️
         </button>
+
     </header>
 
-    <!-- Hero -->
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
     <main>
 
+
+        <!-- HERO -->
+
         <section class="hero">
-            <div class="badge">⚡ FREE ONLINE TOOLS</div>
+
+            <div class="badge">
+                ⚡ FREE ONLINE TOOLS
+            </div>
+
 
             <h1>
+
                 Everything You Need,
-                <span>In One Place.</span>
+
+                <span>
+                    In One Place.
+                </span>
+
             </h1>
+
 
             <p>
                 Simple, fast and useful tools for everyday tasks.
             </p>
 
-            <!-- Search -->
+
+            <!-- SEARCH -->
+
             <div class="search-box">
+
                 <span>🔍</span>
+
                 <input
                     type="text"
                     id="toolSearch"
                     placeholder="Search a tool..."
                     onkeyup="searchTools()"
                 >
+
             </div>
+
         </section>
 
-        <!-- Tools -->
+
+
+        <!-- =========================
+             TOOLS
+        ========================== -->
+
         <section class="tools-section">
 
-            <h2>Popular Tools</h2>
+            <h2>
+                Popular Tools
+            </h2>
 
-            <div class="tools-grid" id="toolsGrid">
 
-                <div class="tool-card" data-name="QR Generator">
-                    <div class="tool-icon">▣</div>
-                    <h3>QR Generator</h3>
-                    <p>Create QR codes instantly.</p>
-                    <button onclick="openTool('QR Generator')">
+            <div
+                class="tools-grid"
+                id="toolsGrid"
+            >
+
+
+                <!-- QR GENERATOR -->
+
+                <div
+                    class="tool-card"
+                    data-name="QR Generator"
+                >
+
+                    <div class="tool-icon">
+                        ▣
+                    </div>
+
+                    <h3>
+                        QR Generator
+                    </h3>
+
+                    <p>
+                        Create QR codes instantly.
+                    </p>
+
+                    <button
+                        onclick="openTool('QR Generator')"
+                    >
                         Open Tool →
                     </button>
+
                 </div>
 
-                <div class="tool-card" data-name="Fancy Text">
-                    <div class="tool-icon">𝓐</div>
-                    <h3>Fancy Text</h3>
-                    <p>Create stylish text & fonts.</p>
-                    <button onclick="openTool('Fancy Text')">
+
+
+                <!-- FANCY TEXT -->
+
+                <div
+                    class="tool-card"
+                    data-name="Fancy Text"
+                >
+
+                    <div class="tool-icon">
+                        𝓐
+                    </div>
+
+                    <h3>
+                        Fancy Text
+                    </h3>
+
+                    <p>
+                        Create stylish text & fonts.
+                    </p>
+
+                    <button
+                        onclick="openTool('Fancy Text')"
+                    >
                         Open Tool →
                     </button>
+
                 </div>
 
-                <div class="tool-card" data-name="Password Generator">
-                    <div class="tool-icon">🔐</div>
-                    <h3>Password Generator</h3>
-                    <p>Generate strong passwords.</p>
-                    <button onclick="openTool('Password Generator')">
+
+
+                <!-- PASSWORD -->
+
+                <div
+                    class="tool-card"
+                    data-name="Password Generator"
+                >
+
+                    <div class="tool-icon">
+                        🔐
+                    </div>
+
+                    <h3>
+                        Password Generator
+                    </h3>
+
+                    <p>
+                        Generate strong passwords.
+                    </p>
+
+                    <button
+                        onclick="openTool('Password Generator')"
+                    >
                         Open Tool →
                     </button>
+
                 </div>
 
-                <div class="tool-card" data-name="Image Compressor">
-                    <div class="tool-icon">🖼️</div>
-                    <h3>Image Compressor</h3>
-                    <p>Reduce image size easily.</p>
-                    <button onclick="openTool('Image Compressor')">
+
+
+                <!-- IMAGE COMPRESSOR -->
+
+                <div
+                    class="tool-card"
+                    data-name="Image Compressor"
+                >
+
+                    <div class="tool-icon">
+                        🖼️
+                    </div>
+
+                    <h3>
+                        Image Compressor
+                    </h3>
+
+                    <p>
+                        Reduce image size easily.
+                    </p>
+
+                    <button
+                        onclick="openTool('Image Compressor')"
+                    >
+                        Open Tool →
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- JSON FORMATTER -->
+
+                <div
+                    class="tool-card"
+                    data-name="JSON Formatter"
+                >
+
+                    <div class="tool-icon">
+                        { }
+                    </div>
+
+                    <h3>
+                        JSON Formatter
+                    </h3>
+
+                    <p>
+                        Format and clean JSON data.
+                    </p>
+
+                    <button
+                        onclick="openTool('JSON Formatter')"
+                    >
                         Open Tool →
                     </button>
+
                 </div>
 
-                <div class="tool-card" data-name="JSON Formatter">
-                    <div class="tool-icon">{ }</div>
-                    <h3>JSON Formatter</h3>
-                    <p>Format and clean JSON data.</p>
-                    <button onclick="openTool('JSON Formatter')">
+
+
+                <!-- WORD COUNTER -->
+
+                <div
+                    class="tool-card"
+                    data-name="Word Counter"
+                >
+
+                    <div class="tool-icon">
+                        Aa
+                    </div>
+
+                    <h3>
+                        Word Counter
+                    </h3>
+
+                    <p>
+                        Count words and characters.
+                    </p>
+
+                    <button
+                        onclick="openTool('Word Counter')"
+                    >
                         Open Tool →
                     </button>
+
                 </div>
 
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         QR GENERATOR MODAL
+    ========================== -->
+
+    <div
+        class="tool-modal"
+        id="qrModal"
+    >
+
+        <div class="modal-box">
+
+
+            <!-- CLOSE -->
+
+            <button
+                class="close-modal"
+                onclick="closeQR()"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+
+            <!-- ICON -->
+
+            <div class="modal-icon">
+                ▣
+            </div>
+
+
+            <h2>
+                QR Generator
+            </h2>
+
+
+            <p class="modal-description">
+                Create a QR code from any text or URL.
+            </p>
+
+
+            <!-- INPUT -->
+
+            <input
+                type="text"
+                id="qrInput"
+                class="tool-input"
+                placeholder="Enter text or URL..."
+            >
+
+
+            <!-- GENERATE -->
+
+            <button
+                class="primary-btn"
+                onclick="generateQR()"
+            >
+                Generate QR
+            </button>
+
+
+            <!-- RESULT -->
+
+            <div
+                class="qr-result"
+                id="qrResult"
+            >
+
+
+                <div id="qrcode"></div>
+
+
+                <div class="qr-actions">
+
+
+                    <button
+                        class="download-btn"
+                        onclick="downloadQR()"
+                    >
+                        📥 Download PNG
+                    </button>
+
+
+                    <button
+                        class="clear-btn"
+                        onclick="clearQR()"
+                    >
+                        Clear
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            S TOOLS
+        </div>
+
+
+        <p>
+            Free tools. Simple. Fast. Useful.
+        </p>
+
+
+        <div class="creator">
+
+            Created by
+
+            <strong>
+                @be.like_sahil
+            </strong>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 S TOOLS.
+            All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         QR CODE LIBRARY
+    ========================== -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    ></script>
+
+
+    <!-- YOUR JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
                 <div class="tool-card" data-name="Word Counter">
                     <div class="tool-icon">Aa</div>
                     <h3>Word Counter</h3>
